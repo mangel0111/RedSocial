@@ -1,0 +1,3 @@
+node_modules/
+src/base.js
+npm-debug.log*

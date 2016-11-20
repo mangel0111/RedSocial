@@ -1,0 +1,214 @@
+*, .base {
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+ h2, h1, h3, div {
+   background: white;
+ }
+
+/*Header*/
+.header {
+    position: fixed;
+    top:0;
+    right: 0;
+    left:0;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    height: 77px;
+}
+
+.headerContainer {
+  background-color: white ;
+  padding: 20px;
+  display:flex;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.headerContainer > div {
+  background-color: white !important;
+  width: 33%;
+}
+
+.searchBox {
+  padding: 35px 40px 0 40px;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.manage {
+  padding: 20px;
+  padding-top: 18px;
+  font-size: 12px;
+  font-weight: 100; 
+  text-align: right; 
+}
+
+.iconLogo {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  background-size: 35px 35px;
+  background-image: url("./images/favicon.ico");
+}
+
+/*Principal Panel*/
+.principalPanel {
+  margin: 170px 200px 120px 200px;
+  background-color: white;
+  border: 1px solid #efefef;
+  margin-bottom: 1px solid #efefef;
+}
+
+.AplicacionesTitle {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.bodyContainer {
+  background: #fafafa;
+}
+
+/* Dashboad */
+.dashboard {
+  background: #f5f5f5;
+  padding: 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+/* Apps */
+.app {
+  background: white;
+  border: 1px solid #efefef;
+  width: 240px;
+  height: 240px;
+  margin: 25px;
+  padding: 10px;
+}
+
+.app-tittle {
+  margin: 10px;
+  font-weight: bold;
+  background: inherit;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.app-tittle:hover {
+  background: inherit;
+}
+
+.app-icon {
+  background: none;
+  width: 180px;
+  height: 180px;
+  margin:0 15px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  padding:  15px;
+  font-size: 18px;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #efefef;
+}
+
+/* General */
+/*  Colors */
+.black {
+  background: black;
+}
+
+.white {
+  background: linear-gradient(141deg, white 0%, white 51%, white 75%);
+}
+
+.white:hover {
+  background: linear-gradient(141deg, #fafafa 0%, #fafafa 51%, #fafafa 75%);
+}
+
+.blue {
+  background: linear-gradient(141deg, #0fb8ad 0%, #0fb8ad 51%, #0fb8ad 75%);
+}
+
+.blue:hover {
+  background: linear-gradient(141deg, #42A5F5 0%, #42A5F5 51%, #42A5F5 75%);
+}
+
+.red {
+  background: linear-gradient(141deg, #F44336 0%, #F44336 51%, #F44336 75%);
+}
+
+.red:hover {
+  background: linear-gradient(141deg, #D32F2F 0%, #D32F2F 51%, #D32F2F 75%);
+}
+
+.green {
+  background: linear-gradient(141deg, #4CAF50 0%, #4CAF50 51%, #4CAF50 75%);
+}
+
+.green:hover {
+  background: linear-gradient(141deg, #388E3C 0%, #388E3C 51%, #388E3C 75%);
+}
+
+.gray {
+  background: linear-gradient(141deg, #9E9E9E 0%, #9E9E9E 51%, #9E9E9E 75%);
+}
+
+.gray:hover{
+  background: linear-gradient(141deg, #757575 0%, #757575 51%, #757575 75%);
+}
+
+.teal {
+  background: linear-gradient(141deg, #009688 0%, #009688 51%, #009688 75%);
+}
+
+.teal:hover {
+  background: linear-gradient(141deg, #00897B 0%, #00897B 51%, #00897B 75%);
+}
+
+.purple {
+  background: linear-gradient(141deg, #9C27B0 0%, #9C27B0 51%, #9C27B0 75%);
+}
+
+.purple:hover {
+  background: linear-gradient(141deg, #7B1FA2 0%, #7B1FA2 51%, #7B1FA2 75%);
+}
+
+.lightBlue {
+  background: linear-gradient(141deg, #03A9F4 0%, #03A9F4 51%, #03A9F4 75%);
+}
+
+.lightBlue:hover {
+  background: linear-gradient(141deg, #039BE5 0%, #039BE5 51%, #039BE5 75%);
+}
+
+.deepOrange {
+  background: linear-gradient(141deg, #FF5722 0%, #FF5722 51%, #FF5722 75%);
+}
+
+.deepOrange:hover {
+  background: linear-gradient(141deg, #F4511E 0%, #F4511E 51%, #F4511E 75%);
+}
+
+.blueGray {
+  background: linear-gradient(141deg, #607D8B 0%, #607D8B 51%, #607D8B 75%);
+}
+
+.blueGray:hover {
+  background: linear-gradient(141deg, #455A64 0%, #455A64 51%, #455A64 75%);
+}
