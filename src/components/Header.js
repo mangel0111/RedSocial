@@ -16,7 +16,7 @@ class Header extends React.Component {
     renderLogo () {
         return (
             <div className="logo">
-                <h2><span className="iconLogo"></span> Red Social</h2>
+                <h2><span className="iconLogo"></span>Mercurial</h2>
             </div>
         );
     };

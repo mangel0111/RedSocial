@@ -25,7 +25,7 @@ class Principal extends React.Component {
     }
 
     getValidName() {
-        if (this.props.view == "" || this.props.view == undefined) {
+        if (this.props.view === "" || this.props.view === undefined) {
             return "Applications"
         }
         return this.props.view;
