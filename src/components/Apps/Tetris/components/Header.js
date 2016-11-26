@@ -1,10 +1,11 @@
 import React from 'react';
 import { loadMenu } from '../actions/index.js';
-import { isPlaying } from '../helper/HelperTetris';
+import { isPlaying, setStatus } from '../helper/HelperTetris';
 
 class Header extends React.Component {
 	
 	render() {
+		setStatus('Play');
 		return (
 			<div className='tetrix-container'>
 				<h1 className='tetrix-header'>TETRIS</h1>

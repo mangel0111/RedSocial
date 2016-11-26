@@ -18,3 +18,17 @@
     margin: 0;
     padding: 10px;
 }
+
+.tetrix-field {
+    background: inherit;
+    display: inline;
+}
+
+.tetrix-game_Field {
+    border-style: solid;
+    width: 300;
+    height: 660;
+    display: inline-block;
+    background-color: #CFD8DC;
+    position: relative;
+}

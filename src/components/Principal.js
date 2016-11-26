@@ -41,7 +41,7 @@ class Principal extends React.Component {
                 return (
                     <Dashboard
                         Apps={apps}
-                        />
+                    />
                 );
         }
     }
