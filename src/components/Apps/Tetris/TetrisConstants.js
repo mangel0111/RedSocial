@@ -22,7 +22,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: 'red',
+			color: '#F44336',
 		},
 		square: {
 			shape: [
@@ -31,7 +31,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: '#00BCD4',
+			color: '#4CAF50',
 		},
 		cross: {
 			shape: [
@@ -40,7 +40,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: 'green',
+			color: '#039BE5',
 		},
 		leftGun: {
 			shape: [
@@ -49,7 +49,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: 'orange',
+			color: '#FF5722',
 		},
 		rightGun: {
 			shape: [
@@ -58,7 +58,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: 'yellow',
+			color: '#9E9E9E',
 		},
 		leftSnake: {
 			shape: [
@@ -67,7 +67,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: 'purple',
+			color: '#9C27B0',
 		},
 		rightSnake: {
 			shape: [
@@ -76,7 +76,7 @@ export default {
 				[0, 0, 0, 0],
 				[0, 0, 0, 0],
 			],
-			color: 'brown',
+			color: '#607D8B',
 		},
 	},
 	initialGrid,

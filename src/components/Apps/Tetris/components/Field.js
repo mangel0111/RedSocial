@@ -20,8 +20,8 @@ let GameField = ({ isPlaying, isPaused, isGameOver }) => {
 						</Layer>
 					</Stage>
 					{ isPaused ? <Banner label="PAUSED" color="black" opacity=".5" /> : null}
-				</div>
-				{ isGameOver ? <Banner label="GAME OVER" color="red" opacity=".8" /> : null}
+                    { isGameOver ? <Banner label="GAME OVER" color="red" opacity=".8" /> : null}
+				</div>	
 			</div>
 		);
 	}

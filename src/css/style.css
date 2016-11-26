@@ -13,7 +13,9 @@ h2 {
 
  h2, h1, h3, div {
    background: white;
+   margin-top:0;
  }
+
 
 /*Header*/
 .header {

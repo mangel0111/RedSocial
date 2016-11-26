@@ -25,10 +25,11 @@
 }
 
 .tetrix-game_Field {
-    border-style: solid;
+    border-style: groove;
     width: 300;
     height: 660;
     display: inline-block;
     background-color: #CFD8DC;
     position: relative;
+    box-shadow: 10px 10px 5px #888888;
 }

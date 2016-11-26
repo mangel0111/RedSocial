@@ -1,7 +1,6 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
-import style from '../styles/styles.css'
 import { startGame } from '../actions/index.js';
 import { connect } from 'react-redux';
 
@@ -16,7 +15,7 @@ let Banner = ({label, color, opacity, dispatch}) => {
 
 	return (
 		<div style={banner}>
-			<h1 style={{ paddingTop: '250px', color }}>{label}</h1>
+			<h1 style={{ paddingTop: '10px', color, marginTop: '200px' }}>{label}</h1>
 			{ label === 'GAME OVER' ? 
 			<MuiThemeProvider>
 				<RaisedButton label="New Game" onClick={() => dispatch(startGame())} />
