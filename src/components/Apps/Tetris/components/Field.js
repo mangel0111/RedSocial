@@ -1,42 +1,39 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Layer, Stage } from 'react-konva';
-import { isPlaying, isPaused, isGameOver } from '../helper/HelperTetris';
-import TetrisConstants from '../TetrisConstants';
+import { connect } from 'react-redux';
 import Banner from './Banner.js';
+import CurrentTetromino from '../containers/CurrentTetromino.js';
+import ActiveTetrominos from '../containers/ActiveTetrominos.js';
+import tetrisConstants from '../tetrisConstants.js';
 
-const { fieldWidth, fieldHeight } = TetrisConstants;
+const { fieldHeight, fieldWidth } = tetrisConstants;
 
-class Field extends Component {
-    constructor(props, context) {
-        super(props, context);
-        this.renderField = this.renderField.bind(this);
-    }
+let GameField = ({ isPlaying, isPaused, isGameOver }) => {
+	if (isPlaying) {
+		return (
+			<div className='tetrix-field'>
+				<div className='tetrix-game_Field'>
+					<Stage width={fieldWidth} height={fieldHeight}>
+						<Layer>
+							<CurrentTetromino />
+							<ActiveTetrominos />
+						</Layer>
+					</Stage>
+					{ isPaused ? <Banner label="PAUSED" color="black" opacity=".5" /> : null}
+				</div>
+				{ isGameOver ? <Banner label="GAME OVER" color="red" opacity=".8" /> : null}
+			</div>
+		);
+	}
+	return null;
+};
 
-    renderField() {
-        if (isPlaying()) {
-            return (
-                <div className='tetrix-field'>
-                    <div className='tetrix-game_Field'>
-                        <Stage width={fieldWidth} height={fieldHeight}>
-                            <Layer>
-                            </Layer>
-                        </Stage>
-                        { isPaused ? <Banner label="PAUSED" color="black" opacity=".5" /> : null}
-                    </div>
-                    { isGameOver ? <Banner label="GAME OVER" color="red" opacity=".8" /> : null}
-                </div>
-            )
-        }
-        return null;
-    }
+const mapStateToProps = ({ gameStatus }) => ({
+	isPlaying: gameStatus !== 'IDLE',
+	isPaused: gameStatus === 'PAUSED',
+	isGameOver: gameStatus === 'GAME_OVER',
+});
 
-    render() {
-        return (
-            <div>
-                {this.renderField}
-            </div>
-        )
-    }
-}
+GameField = connect(mapStateToProps)(GameField);
 
-export default Field
+export default GameField;
