@@ -9,6 +9,7 @@
     "stylus": "0.54.5"
   },
   "dependencies": {
+    "konva": "^1.0.3",
     "draft-js": "^0.9.1",
     "history": "4.2.0",
     "re-base": "2.2.0",
@@ -16,10 +17,12 @@
     "react-addons-css-transition-group": "15.3.2",
     "react-bootstrap": "^0.30.6",
     "react-dom": "^15.3.2",
+    "react-konva": "^1.0.5",
     "react-router": "4.0.0-alpha.3",
     "react-redux": "^4.4.5",
     "react-tap-event-plugin": "^1.0.0",
-    "redux": "^3.0.4"
+    "redux": "^3.0.4",
+    "redux-thunk": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
