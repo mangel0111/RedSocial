@@ -95,7 +95,7 @@ export function checkCollisions(direction, activeTetrominos, currentTetromino) {
 	let gameOver = false;
 	let nx = 0, ny = 0;
 
-	switch(direction) {
+	switch (direction) {
 		case "left":
 			nx = -1;
 			break;
@@ -104,6 +104,8 @@ export function checkCollisions(direction, activeTetrominos, currentTetromino) {
 			break;
 		case "down":
 			ny = 1;
+			break;
+		default:
 			break;
 	}
 

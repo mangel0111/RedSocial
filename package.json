@@ -9,6 +9,8 @@
     "stylus": "0.54.5"
   },
   "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
     "konva": "^1.0.3",
     "draft-js": "^0.9.1",
     "history": "4.2.0",
