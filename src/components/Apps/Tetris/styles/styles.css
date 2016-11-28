@@ -20,8 +20,9 @@
 }
 
 .tetrix-field {
-    background: inherit;
+    background: white;
     display: inline;
+    margin:0 100px 20px 400px;
 }
 
 .tetrix-game_Field {
@@ -29,7 +30,40 @@
     width: 300;
     height: 660;
     display: inline-block;
-    background-color: #CFD8DC;
+    background-color: white;
     position: relative;
     box-shadow: 10px 10px 5px #888888;
+}
+
+.tetrix-fieldscore {
+    display: flex;
+    background: inherit;
+}
+
+.scorePanel {
+	text-align: center;
+}
+
+.scorePanel h2 {
+	margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.scorePanel div {
+    text-align: center;
+}
+.scoreInfo {
+	font-size: xx-large;
+	color: #00C853;
+}
+
+.gameInfo {
+    text-align: center;
+    box-shadow: 10px 10px 5px #888888;
+    border-style: groove;
+    margin-bottom: 20px;
+}
+
+.nextTetromino {
+    margin-left: 40px;
 }

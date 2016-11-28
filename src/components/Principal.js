@@ -1,7 +1,9 @@
 import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
 import Dashboard from './Dashboard';
-import Tetris from './Apps/Tetris'
+import Tetris from './Apps/Tetris';
+import SecrectSanta from './Apps/SecrectSanta'
+
 import Apps from '../app-samples';
 
 class Principal extends React.Component {
@@ -36,12 +38,14 @@ class Principal extends React.Component {
         switch (view) {
             case "Tetris":
                 return <Tetris />;
+            case "SecrectSanta":
+                return <SecrectSanta />
             default:
                 const apps = this.getApps();
                 return (
                     <Dashboard
                         Apps={apps}
-                    />
+                        />
                 );
         }
     }

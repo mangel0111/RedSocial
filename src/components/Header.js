@@ -73,7 +73,6 @@ class Header extends React.Component {
 Header.propTypes = {
     isAuth: React.PropTypes.bool.isRequired,
     Profile: React.PropTypes.object.isRequired
-
 };
 
 

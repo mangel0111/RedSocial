@@ -17,7 +17,7 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-	isPlaying: React.PropTypes.string,
+	isPlaying: React.PropTypes.bool,
 };
 
 export default Header;

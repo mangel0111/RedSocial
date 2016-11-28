@@ -10,15 +10,15 @@ class Application extends React.Component {
     renderAppLayout(app) {
         var classApp = "app " + app.className;
         return (
-            <div className={classApp} onClick={() => this.goToApp(app.name)}>
+            <div className={classApp} onClick={() => this.goToApp(app.code)}>
                 <div className='app-tittle'>{app.name}</div>
                 <img src={app.icon} alt={app.name} className="app-icon"/>
             </div>
         )
     }
 
-    goToApp(name) {
-        this.context.router.transitionTo(`/app/${name}`);
+    goToApp(code) {
+        this.context.router.transitionTo(`/app/${code}`);
     }
 
     render() {
