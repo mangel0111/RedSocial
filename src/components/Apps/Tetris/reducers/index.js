@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { getNewClearedGrid } from '../lib/index.js';
-import tetrisConstants from '../tetrisConstants.js';
+import tetrisConstants from '../model/tetrisConstants.js';
 import * as actions from '../actions/index.js';
 
 const { initialGrid, tetrominos, blockUnit } = tetrisConstants;

@@ -1,4 +1,4 @@
-import tetrisConstants from '../tetrisConstants.js';
+import tetrisConstants from '../model/tetrisConstants.js';
 import { rotateArray, checkCollisions, getCompletedLines } from '../lib/index.js';
 
 export const SPAWN_TETROMINO = 'SPAWN_TETROMINO';

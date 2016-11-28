@@ -1,4 +1,4 @@
-import tetrisConstants from '../tetrisConstants.js';
+import tetrisConstants from '../model/tetrisConstants.js';
 
 function occupied(grid, x, y) {
 	return grid[x][y] !== 'grey';
