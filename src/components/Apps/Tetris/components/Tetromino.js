@@ -1,6 +1,6 @@
 import React from 'react';
 import { Rect, Group } from 'react-konva';
-import tetrisConstants from '../tetrisConstants.js';
+import tetrisConstants from './tetrisConstants.js';
 
 const { blockUnit } = tetrisConstants;
 

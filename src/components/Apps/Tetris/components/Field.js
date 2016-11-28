@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Banner from './Banner.js';
 import CurrentTetromino from '../containers/CurrentTetromino.js';
 import ActiveTetrominos from '../containers/ActiveTetrominos.js';
-import tetrisConstants from '../tetrisConstants.js';
+import tetrisConstants from './tetrisConstants.js';
 
 const { fieldHeight, fieldWidth } = tetrisConstants;
 
