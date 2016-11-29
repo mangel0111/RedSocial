@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(class="mdl-layout mdl-js-layout mdl-layout--fixed-header")
+    header(class="mdl-layout__header")
+      div(class="mdl-layout__header-row")
+        span(class="mdl-layout-title") Super app
+    div(class="mdl-layout__drawer")
+      span(class="mdl-layout-title") Regiones
+      div(style="padding: 0px 20px;")
+        div(class="mdl-textfield mdl-js-textfield")
+          input(class="mdl-textfield__input", type="text", id="sample1")
+          label(class="mdl-textfield__label", for="sample1") Buscar
+      nav(class="mdl-navigation", id="region-list")
+        a(class="mdl-navigation__link", id="add-region") 
+          i(class="material-icons mdl-list__item-icon") add
+          span Agregar región
+    main(class="mdl-layout__content")
+      div(class="page-content")
+        div(style="text-align: center; padding:100px 0px;")
+          i(class="material-icons mdl-list__item-icon", style="font-size: 50px;height: 50px;width: 50px;") my_location
+          p(style="color: #555;") Martín Lobo
+  script(src="/main.js")
