@@ -1,4 +1,3 @@
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import React from 'react';
@@ -9,6 +8,7 @@ import styles from './Tetris/styles/styles.css';
 import ReduxThunk from 'redux-thunk';
 import TetrisApp from './Tetris/reducers/index';
 import CurrentGameInfo from './Tetris/containers/CurrentGameInfo.js';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 injectTapEventPlugin();
 
@@ -27,7 +27,7 @@ class Tetris extends React.Component {
                         <Field />
                         <MuiThemeProvider>
                             <CurrentGameInfo />
-                        </MuiThemeProvider> 
+                        </MuiThemeProvider>
                     </div>
                 </div>
             </Provider>
