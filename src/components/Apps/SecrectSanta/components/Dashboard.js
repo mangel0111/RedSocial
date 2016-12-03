@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Administrator from './Administrator';
-import TabInfo from './TabInfo';
 
 
 class Dashboard extends Component {
@@ -15,9 +14,6 @@ class Dashboard extends Component {
                 <br />
                 <MuiThemeProvider>
                     <Administrator />
-                </MuiThemeProvider>
-                <MuiThemeProvider>
-                    <TabInfo />
                 </MuiThemeProvider>
             </div>
 
