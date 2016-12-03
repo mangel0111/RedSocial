@@ -30,7 +30,7 @@ class Header extends React.Component {
                     <div className="manage">
                         <h3> <span>
                             <Avatar
-                                src="images/Gothfather.jpe"
+                                src="/images/Gothfather.jpe"
                                 size={45}
                                 style={style}
                                 />
