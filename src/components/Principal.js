@@ -12,7 +12,6 @@ class Principal extends React.Component {
         this.renderPrincipalPanel = this.renderPrincipalPanel.bind(this);
         this.renderTitle = this.renderTitle.bind(this);
         this.renderBodyContainer = this.renderBodyContainer.bind(this);
-        this.getApps = this.getApps.bind(this);
         this.switchView = this.switchView.bind(this);
         this.getValidName = this.getValidName.bind(this);
     }
@@ -41,21 +40,15 @@ class Principal extends React.Component {
             case "SecrectSanta":
                 return <SecrectSanta />
             default:
-                const apps = this.getApps();
                 return (
                     <Dashboard
-                        Apps={apps}
+                        Apps={this.props.apps}
                         />
                 );
         }
     }
 
-    getApps() {
-        return Apps;
-    }
-
     renderBodyContainer() {
-
         return (
             <div className='bodyContainer'>
                 {this.switchView()}
