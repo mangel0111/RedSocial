@@ -136,7 +136,7 @@ h2, h1, h3 {
   height: 200px;
   margin: 10px;
   padding: 5px;
-
+  cursor: pointer;
 }
 
 .app-tittle {
@@ -257,4 +257,92 @@ h2, h1, h3 {
 
 .blueGray:hover {
   background: linear-gradient(141deg, #455A64 0%, #455A64 51%, #455A64 75%);
+}
+
+.login {
+  height: 40%;
+  width: 60%;
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  text-align: center;
+}
+
+.login h2 {
+  margin:40px 40px 10px 40px;
+  font-size: 35px;
+}
+
+.login div {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.login div button {
+  margin: 1px;
+  border-radius: 5px;
+}
+
+button.github,
+input[type=submit].github,
+button.facebook,
+input[type=submit].facebook,
+button.twitter,
+input[type=submit].twitter,
+button.google,
+input[type=submit].google {
+  border: 0;
+  display: block;
+  margin-bottom: 2rem;
+  width: 25%;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.github,
+input[type=submit].github {
+  background: #82d465;
+}
+button.github:after,
+input[type=submit].github:after {
+  background: #5cc437;
+}
+button.facebook,
+input[type=submit].facebook {
+  background: #3864a3;
+}
+button.facebook:after,
+input[type=submit].facebook:after {
+  background: #2d5082;
+}
+button.twitter,
+input[type=submit].twitter {
+  background: #5ea9dd;
+}
+button.twitter:after,
+input[type=submit].twitter:after {
+  background: #2c8dd0;
+}
+button.google,
+input[type=submit].google {
+  background-color: #d14836;
+  background-image: -webkit-linear-gradient(top,#dd4b39,#d14836);
+  background-image: linear-gradient(top,#dd4b39,#d14836);
+}
+button.google:after,
+input[type=submit].google:after {
+  background-color: #d14836;
+  background-image: -webkit-linear-gradient(top,#dd4b39,#d14836);
+  background-image: linear-gradient(top,#dd4b39,#d14836);
+}
+
+.footnote {
+  color: #9E9E9E;
+  position: relative;
+  top: 20px;
 }
